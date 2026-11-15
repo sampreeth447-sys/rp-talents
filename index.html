@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RP Talents and Studios — Casting, shoots and studio in Bengaluru</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --paper:#FFFBF5; --paper2:#FBF1E4; --ink:#1A1612; --ink2:#4B4238; --mute:#6B6157;
+  --gold:#C8952E; --goldtext:#8C6A1E; --crimson:#C81E3A; --blush:#FCE4EA; --rose:#F7B6C8;
+  --sage:#E4EBDF; --forest:#1F3B30; --line:#EADFCB;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block}
+a{color:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 28px}
+.display{font-family:'Bricolage Grotesque','Arial Black',sans-serif;font-weight:800;letter-spacing:-1.5px;line-height:.95;text-transform:uppercase;margin:0}
+.serif{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-style:italic;text-transform:none;letter-spacing:0}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:3.5px;text-transform:uppercase;color:var(--goldtext);margin:0}
+.lead{font-size:clamp(18px,2vw,21px);line-height:1.6;color:var(--ink2);margin:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 30px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:0;cursor:pointer;font-family:inherit;transition:transform .15s, background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-ink{background:var(--ink);color:var(--paper)}
+.btn-red{background:var(--crimson);color:#fff}
+.btn-line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.ph{position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:12px}
+.ph span{font-size:12.5px;line-height:1.35;background:#FFFFFFE0;color:var(--ink);padding:4px 8px;border-radius:6px;max-width:100%}
+section{scroll-margin-top:80px}
+
+/* NAV */
+.top{position:sticky;top:0;z-index:40;background:#FFFBF5EE;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:76px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.brand img{width:52px;height:52px;object-fit:contain}
+.brand b{font-family:'Bricolage Grotesque',sans-serif;font-size:20px;font-weight:800;letter-spacing:-.3px}
+.brand i{font-family:'Instrument Serif',serif;font-size:21px;color:var(--goldtext);font-weight:400}
+.links{display:flex;gap:26px;font-size:15px;font-weight:500}
+.links a{text-decoration:none;padding:8px 0}
+.links a:hover{color:var(--crimson)}
+.menu-btn{display:none;width:48px;height:48px;border-radius:50%;border:1.5px solid var(--ink);background:transparent;cursor:pointer;align-items:center;justify-content:center}
+.drawer{display:none;border-top:1px solid var(--line);background:var(--paper)}
+.drawer a{display:block;padding:16px 28px;font-size:20px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--line)}
+.drawer.open{display:block}
+
+/* HERO */
+.hero{padding:56px 0 40px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(54px,8.6vw,124px)}
+.hero h1 .serif{color:var(--crimson);font-size:1.02em}
+.hero .lead{margin:26px 0 30px;max-width:560px}
+.tracks{display:flex;flex-wrap:wrap;gap:12px}
+.track{display:flex;flex-direction:column;gap:2px;padding:14px 26px;border-radius:18px;text-decoration:none;min-width:220px}
+.track b{font-size:17px}
+.track span{font-size:14px}
+.track.t1{background:var(--ink);color:var(--paper)}
+.track.t1 span{color:#D9CFBF}
+.track.t2{background:var(--blush);color:#8E1430;border:1.5px solid var(--rose)}
+.trust{margin-top:26px;font-size:13px;letter-spacing:2px;color:var(--mute);font-weight:600}
+.collage{position:relative;height:560px}
+.collage .c{position:absolute;border-radius:22px;box-shadow:0 24px 50px #4B423826}
+.c1{width:58%;height:72%;left:4%;top:6%;background:linear-gradient(160deg,#F3C9CF,#C81E3A);transform:rotate(-5deg)}
+.c2{width:50%;height:58%;right:0;top:0;background:linear-gradient(160deg,#F6E3B4,#C8952E);transform:rotate(4deg)}
+.c3{width:52%;height:46%;right:8%;bottom:0;background:linear-gradient(160deg,#E4EBDF,#7E9A86);transform:rotate(-2deg)}
+.badge{position:absolute;left:30%;bottom:6%;width:170px;height:170px;border-radius:50%;background:#fff;box-shadow:0 18px 40px #4B423833;display:flex;align-items:center;justify-content:center}
+.badge img{width:132px;height:132px;object-fit:contain}
+.badge svg{position:absolute;inset:0;animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+/* MARQUEE */
+.marquee{background:var(--ink);color:var(--paper);overflow:hidden;padding:18px 0;border-top:1px solid var(--ink)}
+.track-m{display:flex;width:max-content;animation:slide 32s linear infinite}
+.track-m span{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;text-transform:uppercase;letter-spacing:-.3px;padding:0 26px;white-space:nowrap}
+.track-m i{font-style:normal;color:var(--gold)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ABOUT */
+.about{padding:110px 0}
+.about .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:start}
+.statement{font-size:clamp(28px,3.4vw,44px);line-height:1.2;font-weight:500;letter-spacing:-.5px;margin:18px 0 0}
+.statement em{font-family:'Instrument Serif',serif;color:var(--crimson);font-size:1.08em}
+.founder{background:var(--forest);color:#F3EFE6;border-radius:26px;padding:28px;display:flex;flex-direction:column;gap:16px}
+.founder .ph{height:300px;border-radius:16px;background:linear-gradient(160deg,#C8952E,#6B3A2C)}
+.founder h3{margin:0;font-family:'Bricolage Grotesque',sans-serif;font-size:32px;font-weight:800;color:#F2C94C;text-transform:uppercase;letter-spacing:-.5px}
+.founder p{margin:0;font-size:16px;line-height:1.6}
+.compare{margin-top:44px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cmp{border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.cmp h4{margin:0;font-size:13px;letter-spacing:3px;text-transform:uppercase}
+.cmp ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px;font-size:16px;line-height:1.45}
+.cmp li{display:flex;gap:10px}
+.cmp.old{background:#F1ECE4;color:var(--ink2)}
+.cmp.old h4{color:var(--mute)}
+.cmp.new{background:#FFF4D9;border:1.5px solid var(--gold)}
+.cmp.new h4{color:var(--goldtext)}
+.mark{flex:none;font-weight:800}
+
+/* STEPS */
+.steps{background:var(--paper2);padding:100px 0}
+.steps .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;margin-bottom:54px}
+.h2{font-size:clamp(44px,6vw,84px)}
+.row{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;position:relative}
+.row:before{content:"";position:absolute;left:8%;right:8%;top:34px;height:3px;background:repeating-linear-gradient(90deg,var(--ink) 0 14px,transparent 14px 24px)}
+.step{position:relative;display:flex;flex-direction:column;gap:14px}
+.num{width:70px;height:70px;border-radius:50%;background:var(--ink);color:var(--paper);display:flex;align-items:center;justify-content:center;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;border:6px solid var(--paper2)}
+.step:nth-child(2) .num{background:var(--gold);color:var(--ink)}
+.step:nth-child(3) .num{background:var(--crimson);color:#fff}
+.step h3{margin:0;font-family:'Bricolage Grotesque',sans-serif;font-size:30px;font-weight:800;text-transform:uppercase;letter-spacing:-.4px}
+.step p{margin:0;font-size:16.5px;line-height:1.65;color:var(--ink2)}
+
+/* TWO TRACKS + WHO */
+.two{padding:110px 0}
+.two .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.panel{border-radius:28px;padding:40px;display:flex;flex-direction:column;gap:18px;min-height:420px}
+.panel.p1{background:var(--ink);color:var(--paper)}
+.panel.p2{background:var(--blush);color:#3A0B18}
+.panel h3{margin:0;font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(34px,3.6vw,50px);line-height:.98;text-transform:uppercase;letter-spacing:-1px}
+.panel ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:9px;font-size:16.5px;line-height:1.5}
+.panel .btn{align-self:flex-start;margin-top:auto}
+.p1 .eyebrow{color:#F2C94C}
+.p2 .eyebrow{color:#9F1239}
+.who{margin-top:18px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.who div{border-radius:22px;padding:26px;display:flex;flex-direction:column;gap:8px;background:#B4533A;color:#fff}
+.who div:nth-child(2){background:var(--forest)}
+.who div:nth-child(3){background:var(--gold);color:var(--ink)}
+.who div:nth-child(4){background:var(--crimson)}
+.who b{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:26px;text-transform:uppercase}
+.who span{font-size:15px;line-height:1.5}
+
+/* SERVICES */
+.services{background:#fff;padding:110px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 26px}
+.chip{min-height:44px;padding:0 20px;border-radius:999px;border:1.5px solid #D8CDBB;background:#fff;color:var(--ink2);font:600 15px 'Inter',sans-serif;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.bento{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:230px;gap:14px}
+.tile{border-radius:22px;padding:22px;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;transition:opacity .2s,transform .2s}
+.tile b{font-family:'Bricolage Grotesque',sans-serif;font-size:24px;font-weight:800;text-transform:uppercase;letter-spacing:-.3px;line-height:1}
+.tile span{font-size:14.5px;line-height:1.45}
+.tile small{font-size:12.5px;opacity:.85;font-style:italic}
+.tile.hide{display:none}
+.big{grid-row:span 2}
+.wide{grid-column:span 2}
+.t-bridal{background:linear-gradient(170deg,#FCE4EA,#F3B5C3);color:#4A0D1C}
+.t-jewel{background:linear-gradient(135deg,#FFF1C9,#E5BD62);color:#3A2A08}
+.t-saree{background:#F6E1D3;color:#4A2416}
+.t-port{background:#EFE9DF;color:var(--ink)}
+.t-look{background:#E4EBDF;color:#1F3B30}
+.t-ecom{background:#F1ECE4;color:var(--ink)}
+.t-tvc{background:var(--ink);color:var(--paper)}
+.t-ugc{background:var(--crimson);color:#fff}
+.t-pod{background:var(--forest);color:#F3EFE6}
+.t-studio{background:#FFF4D9;color:#3A2A08;border:1.5px solid var(--gold)}
+
+/* SHOWREEL */
+.reel{padding:110px 0}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;margin:30px 0 26px;scrollbar-width:none}
+.tab{flex:none;min-height:44px;padding:0 18px;border:0;border-bottom:3px solid transparent;background:transparent;font:700 15px 'Inter',sans-serif;color:var(--mute);cursor:pointer;text-transform:uppercase;letter-spacing:1.5px}
+.tab[aria-selected="true"]{color:var(--ink);border-color:var(--crimson)}
+.clips{display:flex;gap:16px;flex-wrap:wrap}
+.clip{flex:1 1 300px;display:flex;flex-direction:column;gap:10px;margin:0}
+.clip.v{flex:0 1 210px}
+.frame{position:relative;border-radius:18px;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center}
+.v .frame{aspect-ratio:9/16}
+.play{width:66px;height:66px;border-radius:50%;background:#FFFFFFE6;border:0;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.dur{position:absolute;right:10px;bottom:10px;background:var(--ink);color:#fff;font-size:12.5px;padding:3px 8px;border-radius:6px}
+.ratio{position:absolute;left:10px;top:10px;background:#fff;color:var(--ink);font-size:12px;font-weight:700;padding:3px 8px;border-radius:6px}
+.clip figcaption{font-size:15px;color:var(--ink2)}
+.g1{background:linear-gradient(135deg,#C81E3A,#6B1022)}
+.g2{background:linear-gradient(135deg,#E5BD62,#8C6A1E)}
+.g3{background:linear-gradient(135deg,#7E9A86,#1F3B30)}
+.g4{background:linear-gradient(135deg,#B4533A,#4A2416)}
+
+/* TALENT */
+.talent{background:#3A2A22;color:#F7EFE8;padding:100px 0}
+.talent .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px;margin-bottom:36px}
+.talent .h2{color:var(--rose)}
+.roster{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:12px;scrollbar-width:thin}
+.person{flex:0 0 220px;scroll-snap-align:start;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:8px}
+.person .ph{aspect-ratio:3/4;border-radius:18px}
+.person b{font-size:18px}
+.person small{font-size:14px;color:#E3D3C8}
+
+/* STUDIO */
+.studio{padding:110px 0}
+.studio .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.studio .ph{height:460px;border-radius:28px;background:linear-gradient(160deg,#FFF1C9,#C8952E 70%,#6B3A2C)}
+.uses{display:flex;flex-direction:column;gap:0;margin:26px 0;border-top:1px solid var(--line)}
+.uses div{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line);font-size:19px;font-weight:600}
+.uses small{font-size:14px;color:var(--mute);font-weight:500}
+.slots{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.slots span{padding:10px 16px;border-radius:999px;border:1.5px solid #D8CDBB;font-size:14px;font-weight:600}
+.slots span.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.slots span.off{color:#8A8074;text-decoration:line-through}
+
+/* BTS + WORKSHOP + FEATURES */
+.bts{padding:20px 0 110px}
+.mason{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:170px;grid-auto-flow:dense;gap:12px;margin-top:34px}
+.mason .ph{border-radius:16px}
+.m1{grid-row:span 2;background:#F3B5C3}.m2{background:#E5BD62}.m3{grid-column:span 2;background:#E4EBDF}
+.m4{background:#F6E1D3}.m5{grid-row:span 2;background:#EFE9DF}.m6{grid-column:span 2;background:#FCE4EA}.m7{background:#FFF1C9}
+.workshop{background:var(--rose)}
+.workshop .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px;padding-top:64px;padding-bottom:64px}
+.workshop h2{font-size:clamp(32px,4vw,52px);max-width:760px}
+.features{padding:110px 0}
+.fgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+.feat{display:flex;flex-direction:column;gap:12px;text-decoration:none}
+.feat .ph{aspect-ratio:16/10;border-radius:18px}
+.feat small{font-size:13px;color:var(--mute)}
+.feat b{font-size:22px;line-height:1.25;font-family:'Bricolage Grotesque',sans-serif;font-weight:800}
+.feat em{font-style:normal;font-weight:700;color:var(--crimson);font-size:15px}
+
+/* CONTACT */
+.contact{background:var(--ink);color:var(--paper);padding:110px 0 40px}
+.contact .top-c{text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px}
+.contact .h2{font-size:clamp(48px,8vw,110px)}
+.contact .h2 .serif{color:var(--gold)}
+.cgrid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;margin-top:64px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:22px 20px}
+.f{display:flex;flex-direction:column;gap:6px}
+.f.full{grid-column:1/-1}
+.f label{font-size:12.5px;letter-spacing:2px;text-transform:uppercase;color:#CFC4B4}
+.f input,.f select,.f textarea{font:inherit;font-size:17px;color:var(--paper);background:transparent;border:0;border-bottom:1.5px solid #6B6157;padding:10px 0;min-height:46px;border-radius:0}
+.f select option{color:#1A1612}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--gold)}
+.who-pick{display:flex;flex-wrap:wrap;gap:8px}
+.who-pick label{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border:1.5px solid #6B6157;border-radius:999px;font-size:15px;letter-spacing:0;text-transform:none;color:var(--paper);cursor:pointer}
+.who-pick input{accent-color:#C8952E;min-height:0}
+.note{grid-column:1/-1;margin:0;font-size:15px;color:#F2C94C;min-height:20px}
+.info{display:flex;flex-direction:column;gap:24px}
+.info h3{margin:0 0 6px;font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+.info p{margin:0;font-size:17px;line-height:1.6;color:#E9E1D3}
+.socials{display:flex;gap:10px}
+.socials a{width:46px;height:46px;border-radius:50%;border:1.5px solid #6B6157;display:flex;align-items:center;justify-content:center}
+.foot{margin-top:80px;border-top:1px solid #3A332C;padding-top:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-size:14px;color:#B9AE9F}
+.foot nav{display:flex;flex-wrap:wrap;gap:18px}
+.foot a{text-decoration:none}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:45;width:58px;height:58px;border-radius:50%;background:#1F7A4D;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px #1A161244}
+
+/* RESPONSIVE */
+@media (max-width:980px){
+  .links,.top .btn{display:none}
+  .menu-btn{display:flex}
+  .hero .wrap,.about .wrap,.studio .wrap,.cgrid{grid-template-columns:1fr}
+  .collage{height:420px}
+  .who{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .bento{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fgrid{grid-template-columns:1fr}
+  .mason{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .wrap{padding:0 18px}
+  .hero{padding-top:34px}
+  .track{min-width:0;flex:1 1 100%}
+  .compare,.two .grid,.row{grid-template-columns:1fr}
+  .row:before{display:none}
+  .who b{font-size:20px}
+  .bento{grid-auto-rows:minmax(170px,auto)}
+  .tile{padding:16px}
+  .tile b{font-size:19px}
+  .big{grid-row:span 1}
+  .wide{grid-column:span 2}
+  .panel{padding:28px;min-height:0}
+  .studio .ph{height:300px}
+  form{grid-template-columns:1fr}
+  .collage{height:340px}
+  .badge{width:130px;height:130px}.badge img{width:100px;height:100px}
+  .mason{grid-auto-rows:130px}
+}
+@media (prefers-reduced-motion:reduce){
+  .track-m,.badge svg{animation:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+<div class="wrap">
+<a class="brand" href="#top" aria-label="RP Talents and Studios home"><img src="logo-ink.png" alt=""><b>RP Talents</b><i>&amp; Studios</i></a>
+<nav class="links" aria-label="Main">
+<a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#talent">Talent</a><a href="#studio">Studio</a><a href="#contact">Contact</a>
+</nav>
+<a class="btn btn-red" href="brands.html">Book Talent</a>
+<button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1A1612" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+</div>
+<nav class="drawer" id="drawer" aria-label="Mobile">
+<a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#talent">Talent</a><a href="#studio">Studio</a><a href="#contact">Contact</a><a href="brands.html" style="color:#C81E3A">Book Talent →</a>
+</nav>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="hero-h">
+<div class="wrap">
+<div>
+<p class="eyebrow">Creative hub · Casting · Production — Chandra Layout, Bengaluru</p>
+<h1 id="hero-h" class="display" style="margin-top:18px">Faces for <span class="serif">every</span> frame.</h1>
+<p class="lead">RP Talents and Studios casts models, actors and UGC creators for fashion, jewellery and commercial campaigns — and shoots them in our own studio. Led by creative scout Rakshith Prithvi.</p>
+<div class="tracks">
+<a class="track t1" href="brands.html"><b>I’m a Brand →</b><span>Cast your next campaign</span></a>
+<a class="track t2" href="talent.html"><b>I’m New Talent →</b><span>No experience needed</span></a>
+</div>
+<p class="trust">WORKED WITH TANISHQ · FLIPKART · JIOMART · PARLE · STAR HEALTH · MOOV</p>
+</div>
+<div class="collage" aria-hidden="true">
+<div class="c ph c1"><span>[Bridal model, crimson silk]</span></div>
+<div class="c ph c2"><span>[Gold jewellery close-up]</span></div>
+<div class="c ph c3"><span>[UGC creator filming a reel]</span></div>
+<div class="badge">
+<svg viewBox="0 0 170 170" width="100%" height="100%"><defs><path id="circ" d="M85,85 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0"/></defs><text font-family="Inter, Arial" font-size="11.5" font-weight="700" letter-spacing="3.2" fill="#8C6A1E"><textPath href="#circ">CASTING ✦ SHOOTS ✦ STUDIO ✦ BENGALURU ✦ </textPath></text></svg>
+<img src="logo-deepgold.png" alt="">
+</div>
+</div>
+</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-label="Brands we have worked with">
+<div class="track-m">
+<span>Tanishq · Mia <i>✦</i></span><span>Flipkart <i>✦</i></span><span>JioMart <i>✦</i></span><span>Parle Products <i>✦</i></span><span>Star Health Insurance <i>✦</i></span><span>Moov <i>✦</i></span><span>Local fashion &amp; silk houses <i>✦</i></span>
+<span aria-hidden="true">Tanishq · Mia <i>✦</i></span><span aria-hidden="true">Flipkart <i>✦</i></span><span aria-hidden="true">JioMart <i>✦</i></span><span aria-hidden="true">Parle Products <i>✦</i></span><span aria-hidden="true">Star Health Insurance <i>✦</i></span><span aria-hidden="true">Moov <i>✦</i></span><span aria-hidden="true">Local fashion &amp; silk houses <i>✦</i></span>
+</div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about" aria-labelledby="about-h">
+<div class="wrap">
+<div>
+<p class="eyebrow" id="about-h">About us</p>
+<p class="statement">A creative hub, casting agency and studio under one roof — built to connect <em>local talent</em> with commercial brands, and to give every new face a <em>fair way in</em>.</p>
+<div class="compare">
+<div class="cmp old"><h4>Traditional agencies</h4><ul>
+<li><span class="mark">—</span>Commission cut from every booking</li>
+<li><span class="mark">—</span>Middlemen between brand and talent</li>
+<li><span class="mark">—</span>Opaque fees, slow payouts</li>
+<li><span class="mark">—</span>Freshers kept out</li></ul></div>
+<div class="cmp new"><h4>RP direct platform</h4><ul>
+<li><span class="mark" style="color:#8C6A1E">✓</span>Transparent subscription, clear terms</li>
+<li><span class="mark" style="color:#8C6A1E">✓</span>Brands and talent connect directly</li>
+<li><span class="mark" style="color:#8C6A1E">✓</span>Focused on paid commercial work</li>
+<li><span class="mark" style="color:#8C6A1E">✓</span>Open onboarding with guidance</li></ul></div>
+</div>
+</div>
+<aside class="founder" aria-label="Founder">
+<div class="ph"><span>[Founder portrait: Rakshith Prithvi on set]</span></div>
+<p class="eyebrow" style="color:#E3C77A">Founder · Creative scout</p>
+<h3>Rakshith Prithvi</h3>
+<p>Scouts and mentors new faces, casts for brand campaigns, and directs talent on set.</p>
+</aside>
+</div>
+</section>
+
+<!-- STEPS -->
+<section class="steps" aria-labelledby="steps-h">
+<div class="wrap">
+<div class="head"><h2 id="steps-h" class="display h2">How we <span class="serif">work</span></h2><p class="lead" style="max-width:420px">From the brief to the launch — one team, one studio, no hand-offs.</p></div>
+<div class="row">
+<div class="step"><div class="num">01</div><h3>Scout &amp; cast</h3><p>We scout and shortlist models, actors and UGC creators matched to your brand, audience and format.</p></div>
+<div class="step"><div class="num">02</div><h3>Shoot</h3><p>Photo and video in our Chandra Layout studio or on location — fashion, bridal, jewellery, TVCs, podcasts and interviews.</p></div>
+<div class="step"><div class="num">03</div><h3>Deliver &amp; launch</h3><p>Edited photos, reels and ad spots ready to launch — and portfolios that help new talent land paid work.</p></div>
+</div>
+</div>
+</section>
+
+<!-- TWO TRACKS + WHO WE CAST -->
+<section class="two" aria-labelledby="two-h">
+<div class="wrap">
+<h2 id="two-h" class="display h2" style="margin-bottom:34px">Two ways <span class="serif">in</span></h2>
+<div class="grid">
+<div class="panel p1"><p class="eyebrow">For brands</p><h3>Cast, shoot and launch in one place</h3>
+<ul><li>Models, actors and UGC creators for TVCs, digital ads and launches</li><li>Curated shortlists matched to your brief</li><li>Studio rental in Chandra Layout for the shoot itself</li></ul>
+<a class="btn" style="background:#F2C94C;color:#1A1612" href="brands.html">Submit a casting brief</a></div>
+<div class="panel p2"><p class="eyebrow">For new talent</p><h3>No experience needed. We guide you on set.</h3>
+<ul><li>Hands-on posing walkthroughs at every test shoot</li><li>Headshots with real-time feedback on light and framing</li><li>A portfolio that casting teams can review</li></ul>
+<a class="btn btn-red" href="talent.html">Register as talent</a></div>
+</div>
+<div class="who" aria-label="Who we cast">
+<div><b>Models</b><span>Fashion, bridal, jewellery, e-commerce</span></div>
+<div><b>Actors</b><span>TVCs, digital ads, corporate promos</span></div>
+<div><b>UGC creators</b><span>Reels, reviews, creator-led ads</span></div>
+<div><b>Presenters</b><span>Podcasts, interviews, brand launches</span></div>
+</div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services" aria-labelledby="svc-h">
+<div class="wrap">
+<p class="eyebrow">What we do</p>
+<h2 id="svc-h" class="display h2" style="margin-top:12px">Every kind of <span class="serif">shoot</span></h2>
+<div class="chips" role="group" aria-label="Filter services">
+<button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+<button class="chip" type="button" data-f="fashion" aria-pressed="false">Fashion &amp; bridal</button>
+<button class="chip" type="button" data-f="jewel" aria-pressed="false">Jewellery</button>
+<button class="chip" type="button" data-f="ads" aria-pressed="false">Ads &amp; UGC</button>
+<button class="chip" type="button" data-f="studio" aria-pressed="false">Studio</button>
+</div>
+<div class="bento">
+<div class="tile big t-bridal" data-c="fashion"><b>Bridal &amp; couture</b><span>Heirloom silks, couture drapes, wedding-season stories.</span><small>[Photo: bride in crimson silk, temple jewellery]</small></div>
+<div class="tile wide t-jewel" data-c="jewel"><b>Jewellery campaigns</b><span>Gold · silver · diamond — macro detail, true-to-skin light.</span><small>[Photo: diamond necklace on the collarbone]</small></div>
+<div class="tile t-saree" data-c="fashion"><b>Saree &amp; ethnic</b><span>Drape-led shoots for silk houses.</span></div>
+<div class="tile t-port" data-c="fashion"><b>Model portfolios</b><span>Test shoots that make freshers bookable.</span></div>
+<div class="tile t-look" data-c="fashion"><b>Designer lookbooks</b><span>Seasonal edits, one visual story.</span></div>
+<div class="tile t-tvc" data-c="ads"><b>TVC &amp; digital ads</b><span>Brand launches and corporate promos.</span></div>
+<div class="tile t-ugc" data-c="ads"><b>UGC &amp; reels</b><span>Creator-led, vertical, platform-native.</span></div>
+<div class="tile t-ecom" data-c="fashion jewel"><b>E-commerce catalog</b><span>Consistent on-model sets at scale.</span></div>
+<div class="tile wide t-pod" data-c="studio"><b>Podcast &amp; interview</b><span>Two-camera sets, clean audio, ready to publish.</span></div>
+<div class="tile wide t-studio" data-c="studio"><b>Studio rental</b><span>Book the Chandra Layout space by the shoot.</span></div>
+</div>
+</div>
+</section>
+
+<!-- SHOWREEL -->
+<section id="work" class="reel" aria-labelledby="reel-h">
+<div class="wrap">
+<p class="eyebrow">Showreel</p>
+<h2 id="reel-h" class="display h2" style="margin-top:12px">Our <span class="serif">work</span></h2>
+<div class="tabs" role="tablist" aria-label="Video categories">
+<button class="tab" role="tab" type="button" aria-selected="true" data-t="0">Bridal &amp; jewellery</button>
+<button class="tab" role="tab" type="button" aria-selected="false" data-t="1">Fashion</button>
+<button class="tab" role="tab" type="button" aria-selected="false" data-t="2">TVC &amp; ads</button>
+<button class="tab" role="tab" type="button" aria-selected="false" data-t="3">Vertical · UGC</button>
+<button class="tab" role="tab" type="button" aria-selected="false" data-t="4">Podcast</button>
+</div>
+<div class="clips" id="clips" role="tabpanel" aria-live="polite"></div>
+</div>
+</section>
+
+<!-- TALENT -->
+<section id="talent" class="talent" aria-labelledby="tal-h">
+<div class="wrap">
+<div class="head">
+<div><h2 id="tal-h" class="display h2">Meet our <span class="serif">talent</span></h2><p style="margin:14px 0 0;font-size:18px;color:#E3D3C8">Fresh faces and working professionals. Swipe →</p></div>
+<a class="btn" style="background:#F7EFE8;color:#1A1612" href="brands.html">Book Talent</a>
+</div>
+<div class="roster">
+<a class="person" href="#"><div class="ph" style="background:linear-gradient(160deg,#F3B5C3,#C81E3A)"><span>[Portrait]</span></div><b>[Talent name]</b><small>Model · Bridal</small></a>
+<a class="person" href="#"><div class="ph" style="background:linear-gradient(160deg,#E5BD62,#8C6A1E)"><span>[Portrait]</span></div><b>[Talent name]</b><small>Model · Jewellery</small></a>
+<a class="person" href="#"><div class="ph" style="background:linear-gradient(160deg,#7E9A86,#1F3B30)"><span>[Portrait]</span></div><b>[Talent name]</b><small>Actor · TVC</small></a>
+<a class="person" href="#"><div class="ph" style="background:linear-gradient(160deg,#F6E1D3,#B4533A)"><span>[Portrait]</span></div><b>[Talent name]</b><small>UGC creator</small></a>
+<a class="person" href="#"><div class="ph" style="background:linear-gradient(160deg,#FCE4EA,#F7B6C8)"><span>[Portrait]</span></div><b>[Talent name]</b><small>Fresher · New face</small></a>
+<a class="person" href="#"><div class="ph" style="background:linear-gradient(160deg,#FFF1C9,#C8952E)"><span>[Portrait]</span></div><b>[Talent name]</b><small>Presenter · Podcast</small></a>
+</div>
+</div>
+</section>
+
+<!-- STUDIO -->
+<section id="studio" class="studio" aria-labelledby="st-h">
+<div class="wrap">
+<div class="ph"><span>[Studio photo: lit podcast set and cyclorama, Chandra Layout]</span></div>
+<div>
+<p class="eyebrow">Studio rental · Chandra Layout</p>
+<h2 id="st-h" class="display h2" style="margin-top:12px">Book the <span class="serif">space</span></h2>
+<div class="uses">
+<div>Podcasts <small>Two-mic set</small></div>
+<div>Video interviews <small>Two-camera</small></div>
+<div>Commercial photography <small>Cyclorama + key light</small></div>
+</div>
+<p style="margin:0 0 12px;font-size:14px;color:#6B6157">Sample day · Wednesday</p>
+<div class="slots"><span>9–11</span><span class="on">11–1</span><span>2–4</span><span>4–6</span><span class="off">6–8 · booked</span></div>
+<a class="btn btn-ink" href="studio.html">Check availability →</a>
+</div>
+</div>
+</section>
+
+<!-- BEHIND THE SCENES -->
+<section class="bts" aria-labelledby="bts-h">
+<div class="wrap">
+<h2 id="bts-h" class="display h2">Behind the <span class="serif">scenes</span></h2>
+<div class="mason">
+<div class="ph m1"><span>[Director guiding a fresher]</span></div>
+<div class="ph m2"><span>[Jewellery macro setup]</span></div>
+<div class="ph m3"><span>[Bridal styling and draping]</span></div>
+<div class="ph m4"><span>[Podcast recording]</span></div>
+<div class="ph m5"><span>[UGC creator filming]</span></div>
+<div class="ph m6"><span>[Crew reviewing frames on the monitor]</span></div>
+<div class="ph m7"><span>[Headshot session]</span></div>
+</div>
+</div>
+</section>
+
+<!-- WORKSHOP -->
+<section class="workshop" aria-labelledby="ws-h">
+<div class="wrap">
+<h2 id="ws-h" class="display">Camera-confidence workshops for <span class="serif">freshers</span></h2>
+<a class="btn btn-ink" href="talent.html">See workshop dates</a>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" aria-labelledby="ft-h">
+<div class="wrap">
+<div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:18px">
+<h2 id="ft-h" class="display h2">Features</h2>
+<a class="btn btn-line" href="#">Read all →</a>
+</div>
+<div class="fgrid">
+<a class="feat" href="#"><div class="ph" style="background:#F6E1D3"><span>[Fresher at a test shoot]</span></div><small>[Date]</small><b>How to prepare for your first test shoot</b><em>Read more</em></a>
+<a class="feat" href="#"><div class="ph" style="background:#FCE4EA"><span>[Creator filming a reel]</span></div><small>[Date]</small><b>What brands look for in a UGC creator</b><em>Read more</em></a>
+<a class="feat" href="#"><div class="ph" style="background:#FFF1C9"><span>[Bridal pose study]</span></div><small>[Date]</small><b>Saree and bridal shoots: posing basics</b><em>Read more</em></a>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact" aria-labelledby="ct-h">
+<div class="wrap">
+<div class="top-c">
+<p class="eyebrow" style="color:#E3C77A">Contact us</p>
+<h2 id="ct-h" class="display h2">Let’s work <span class="serif">together</span></h2>
+<p class="lead" style="color:#D9CFBF;max-width:640px">Looking for the right faces for your campaign — or ready to start your career in front of the camera?</p>
+</div>
+<div class="cgrid">
+<form id="cform" novalidate>
+<div class="f full"><label>I’m a</label>
+<div class="who-pick">
+<label><input type="radio" name="who" checked> Brand</label>
+<label><input type="radio" name="who"> New talent</label>
+<label><input type="radio" name="who"> Studio booking</label>
+</div></div>
+<div class="f"><label for="fn">First name</label><input id="fn" type="text" autocomplete="given-name"></div>
+<div class="f"><label for="ln">Last name</label><input id="ln" type="text" autocomplete="family-name"></div>
+<div class="f"><label for="em">E-mail *</label><input id="em" type="email" autocomplete="email"></div>
+<div class="f"><label for="ph">Phone / WhatsApp</label><input id="ph" type="tel" autocomplete="tel"></div>
+<div class="f full"><label for="msg">Message</label><textarea id="msg" rows="3"></textarea></div>
+<button class="btn" type="submit" style="background:#F2C94C;color:#1A1612;justify-self:start">Send enquiry</button>
+<p class="note" id="cnote" role="status"></p>
+</form>
+<div class="info">
+<div><h3>Visit</h3><p>RP Talents and Studios<br>[Full street address], Chandra Layout, Bengaluru</p></div>
+<div><h3>Call / WhatsApp</h3><p>[Phone]</p></div>
+<div><h3>E-mail</h3><p>[Email]</p></div>
+<div><h3>Follow</h3><div class="socials">
+<a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFBF5" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg></a>
+<a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="#FFFBF5" aria-hidden="true"><path d="M9 7.5v9l8-4.5z"/></svg></a>
+<a href="#" aria-label="WhatsApp"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFBF5" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg></a>
+</div></div>
+</div>
+</div>
+<div class="foot">
+<span>© RP Talents and Studios · Chandra Layout, Bengaluru · Founded by Rakshith Prithvi</span>
+<nav aria-label="Footer"><a href="brands.html">Casting enquiries</a><a href="talent.html">Join as talent</a><a href="studio.html">Studio booking</a><a href="#">Privacy</a><a href="#">FAQs</a></nav>
+</div>
+</div>
+</section>
+</main>
+
+<a class="wa" href="#contact" aria-label="Chat on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/></svg></a>
+<a href="designs.html" style="position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:45;background:#1A1612;color:#FFFBF5;text-decoration:none;font:600 14px/1 Arial,sans-serif;padding:12px 18px;border-radius:999px;box-shadow:0 6px 20px #0004">☰ All designs</a>
+
+<script>
+(function(){
+  // mobile menu
+  var mb=document.querySelector('.menu-btn'), dr=document.getElementById('drawer');
+  mb.addEventListener('click',function(){var o=dr.classList.toggle('open');mb.setAttribute('aria-expanded',o?'true':'false');});
+  dr.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){dr.classList.remove('open');mb.setAttribute('aria-expanded','false');});});
+
+  // service filter
+  var chips=document.querySelectorAll('.chip'), tiles=document.querySelectorAll('.tile');
+  chips.forEach(function(c){c.addEventListener('click',function(){
+    chips.forEach(function(x){x.setAttribute('aria-pressed','false');}); c.setAttribute('aria-pressed','true');
+    var f=c.dataset.f; tiles.forEach(function(t){ t.classList.toggle('hide', f!=='all' && t.dataset.c.split(' ').indexOf(f)<0); });
+  });});
+
+  // showreel tabs
+  var sets=[
+    [['Bridal couture film','1:20','g1'],['Diamond jewellery campaign','0:45','g2'],['Temple jewellery lookbook','1:05','g4']],
+    [['Silk saree drape film','0:58','g2'],['Designer boutique lookbook','1:12','g3'],['E-commerce catalog reel','0:40','g1']],
+    [['Brand launch spot','0:30','g4'],['FMCG digital ad','0:20','g1'],['Corporate promo','1:45','g3']],
+    [['UGC product review','0:25','g1'],['Creator unboxing','0:18','g2'],['Fresher test-shoot reel','0:22','g3'],['Jewellery try-on reel','0:15','g4']],
+    [['Founder talk podcast','12:40','g3'],['Two-camera interview','6:15','g2'],['Studio walkthrough','1:30','g1']]
+  ];
+  var box=document.getElementById('clips'), tabs=document.querySelectorAll('.tab');
+  var playSvg='<svg width="22" height="22" viewBox="0 0 24 24" fill="#1A1612" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>';
+  function show(i){
+    tabs.forEach(function(t,k){t.setAttribute('aria-selected',k===i?'true':'false');});
+    var v=(i===3);
+    box.innerHTML=sets[i].map(function(c){
+      return '<figure class="clip'+(v?' v':'')+'"><div class="frame '+c[2]+'"><span class="ratio">'+(v?'9:16':'16:9')+'</span><button class="play" type="button" aria-label="Play '+c[0]+'">'+playSvg+'</button><span class="dur">'+c[1]+'</span></div><figcaption>['+c[0]+']</figcaption></figure>';
+    }).join('');
+  }
+  tabs.forEach(function(t,k){t.addEventListener('click',function(){show(k);});});
+  show(0);
+
+  // contact form: design preview, not connected
+  document.getElementById('cform').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('cnote').textContent='This is a design preview — the form isn’t connected yet, so nothing was sent.';
+  });
+})();
+</script>
+</body>
+</html>
